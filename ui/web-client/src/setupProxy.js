@@ -3,9 +3,9 @@ const morgan = require("morgan");
 
 module.exports = app => {
     app.use(
-        "/data",
+        "",
         proxy({
-            target: "http://localhost:8000/data",
+            target: "http://localhost:8000/",
             changeOrigin: true
         })
     );
